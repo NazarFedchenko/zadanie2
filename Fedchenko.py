@@ -65,7 +65,7 @@ root.columnconfigure(0, weight=1)
 
 ICON_FILE = "icon2.ico"
 
-ICON_FILE = "icon2.ico"
+
 
 # Funkcia na nastavenie ikony aplikácie
 def _set_icon(root: tk.Tk):
@@ -79,7 +79,7 @@ def _set_icon(root: tk.Tk):
             print(f"⚠️ Іконку не вдалося завантажити: {e}")
 
 
-root.title("Generátor čísel ⟨A, B⟩ + C")
+
 
 # Volanie funkcie na nastavenie ikony
 _set_icon(root)
@@ -94,14 +94,11 @@ except Exception as e:
     print(f"⚠️ Background not loaded: {e}")
 
 
-
-
-
 # Inputs
-# Дозволяємо головному вікну адаптуватися при зміні розміру
-for i in range(8):  # бо у тебе рядки 0–7
+
+for i in range(8):
     root.rowconfigure(i, weight=1)
-for j in range(2):  # бо у тебе колонки 0–1
+for j in range(2):
     root.columnconfigure(j, weight=1)
     
 
